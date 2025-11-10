@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optimal Transaction Settlement</title>
+
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/5548f5ed00.js" crossorigin="anonymous"></script>
+
+  <script type="text/javascript"
+    src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js" type="module"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-light"
+    style="font-size: 25px; font-family: sans-serif; background-color: whitesmoke;">
+    <img src="cash-flow.png" style="width: 55px; height: 55px;" class="d-inline-block align-top"
+      alt="Optimal Transaction Settlement Logo">
+    Optimal Transaction Settlement
+  </nav>
+
+  <div id="container">
+  
+    <div class="graph-column">
+      <div id="mynetwork"></div>
+      <button type="button" class="btn btn-danger" id="generate-graph">Generate Problem</button>
+    </div>
+  
+    <div class="graph-column">
+      <div id="container2">
+        <span id="temptext"
+          style="width: 100%; text-align: center; font-size: x-large; display: block;">
+          Click “Solve Problem” to get the optimal transaction solution!
+        </span>
+        <div id="mynetwork2" style="display: none;"></div>
+      </div>
+      <button type="button" class="btn btn-success" id="solve">Solve Problem</button>
+    </div>
+  
+  </div>
+  
+  <footer style="font-size:10px; text-align:center; margin-top:20px;">
+    Icon “Cash” by <a href="https://www.flaticon.com/free-icons/cash" target="_blank">Eucalyp - Flaticon</a>
+  </footer>
+</body>
+
+</html>

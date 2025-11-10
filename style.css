@@ -1,0 +1,62 @@
+html,
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Allows stacking on small screens */
+    justify-content: space-evenly; /* Puts space between columns */
+    margin: 20px auto;
+}
+
+.graph-column {
+    width: 100%; /* Default for mobile */
+    max-width: 600px; /* Max width for each column */
+    text-align: center; /* Center the button */
+    margin-bottom: 20px;
+}
+
+#mynetwork,
+#container2 {
+    width: 100%; /* Make graph containers fill the column */
+    height: 450px; /* Give them a fixed height */
+    border: 1px solid lightgray;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in width/height */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#container2 {
+    display: flex;
+    flex-direction: column; /* Stack temptext and graph */
+    justify-content: center;
+    align-items: center;
+}
+
+#mynetwork2 {
+    width: 100%;
+    height: 100%;
+}
+
+/* Buttons */
+#generate-graph,
+#solve {
+    margin: 15px auto; /* Space above/below button */
+    display: block; /* Ensures it takes its own line */
+    width: 200px;
+    font-weight: bold;
+}
+
+/* Desktop layout: Make columns side-by-side */
+@media (min-width: 768px) {
+    .graph-column {
+        width: 48%; /* Two columns, with a little space */
+    }
+}
